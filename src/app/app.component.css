@@ -1,0 +1,13 @@
+
+app-header{
+    display: flex;
+}
+
+app-body{
+    flex-grow: 1;
+}
+
+app-footer{
+    flex-shrink: 0;
+    
+}

@@ -1,0 +1,130 @@
+<div
+  class="tab-pane"
+  id="v-pills-research"
+  role="tabpanel"
+  aria-labelledby="v-pills-research-tab"
+>
+  <h2 class="strong pb-3"> Research Interest </h2>
+  <div class="jumbotron">
+    <h4 class="font-weight-bold">"Can you hear the shape of a drum?"</h4>
+    <p>
+    </p>
+
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{ panelOpenState ?  'Close' : 'Learn more...'}}
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="card card-body">
+        <p class="textVadim">
+          In 1911, Hermann Weyl proved the remarkable asymptotic formula describing
+          distribution of (large) eigenvalues of the Dirichlet Laplacian in a bounded
+          domain <span>&#8486; </span> <span>&#8834;</span> R <sup>d</sup>. <br>
+          <br>
+        N(<span>&lambda;</span>)=(2<span>&pi;</span>)<sup>-d
+          </sup> <span>&omega;</span>_d Vol(<span>&Omega;</span>)
+          <span>&lambda;</span>
+          <sup> d/2 </sup>
+                (1+ o(1)) as <span>&lambda;</span><span>&#8594;</span> +<span>&#8734;</span>,
+                where N(<span>&lambda;</span>) is the number of eigenvalues
+                of the Laplacian spectrum, which are less than <span>&lambda;</span>,
+                <span>&omega;</span>_d is a volume of the unit ball in R_d,
+                Vol(<span>&Omega;</span>) is the volume of <span>&Omega;</span>, and the
+                Laplace spectrum of a domain <span>&Omega;</span>
+                is defined as the set of positive real numbers <span>&lambda;</span>
+                (with multiplicities) that satisfy the eigenvalue problem in
+                <span>&Omega;</span>  with Dirichlet boundary conditions.
+                <br>
+                <br>
+
+                This result motivated the title of a famous paper
+                by M. Kac  <br>
+                <cite class="opis1">“Can you hear the shape of a drum?”</cite>.
+                <br>
+                <br>
+                The question is: can the shape of a bounded domain
+                <span>&#8486; </span> <span>&#8834;</span> R <sup>d</sup> be
+                determined by the Laplace spectrum?  <br>  <br>
+                Two domains are called isospectral if they have the same eigenvalues.
+                Consider the space of domains with a smooth boundary. The existence of
+                isospectral non-isometric domains is a well-known open question.
+
+        </p>
+        <p class="textVadim">
+          The first direction of my research is to prove the local spectral rigidity
+          for convex planar domains, i.e. for a smooth convex planar domain
+          <span>&Omega;</span> the
+          Laplace spectrum determines <span>&Omega;</span> locally. There are no nearby
+          isospectral non-isometric domains with smooth boundary. All of the
+          these questions can also be posed for Riemannian manifolds. The questions
+          of local spectral rigidity for Riemannian manifolds with Anosov geodesic
+          flows are closely related and also open.
+        </p>
+        <p class="textVadim">
+          Another challenging question is Ivrii’s conjecture.
+          There is a hope to disprove it and as the result
+          show that error term in the Weyl law is not always the one you expect.
+        </p>
+        <h3 class="font-weight-bold">Locally integrable systems </h3>
+        <p class="textVadim">
+          This direction of research targets a proof of local rigidity for
+          integrable systems: geodesic flows on tori (resp. convex planar billiards).
+          The first goal is to prove that an integrable metric close to a Liouville
+          metric is Liouville. The second type is billiards inside smooth planar
+          domains integrable near the boundary.
+        </p>
+      </div>
+    </mat-expansion-panel>
+  </div>
+
+  <div class="jumbotron">
+    <h4 class="font-weight-bold">Kirkwood gaps</h4>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Stochastic behavior in Kirkwood gaps
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="card card-body">
+        <p class="textVadim">
+          In the Solar system between orbits of Mars and Jupiter there are nearly
+          two million asteroids of diameter over one km.
+          When astronomers look distribution of asteroids with respect to semi-major
+          axis or, equivalently, period, they see gaps in the distribution. <br>
+          <a href="https://en.wikipedia.org/wiki/Asteroid_belt#/media/File:Kirkwood_Gaps.svg"
+          target="_blank">
+            https://en.wikipedia.org/wiki/Asteroid_belt#/media/File:Kirkwood_Gaps.svg</a>
+            <br>
+            The gaps are located near low order resonances with Jupiter. The most famous gaps
+            have period ratio with Jupiter 1:3, 2:5, 3:7. For the 1:3 gap there is a well-known
+            mechanism proposed by Wisdom, which is supported by numerical experiments. This
+            mechanism seems to apply also to the 2:5 gap. Our goal is two fold: one is to
+            develop a mathematic theory of stochastic behavior at the gaps 1:3, 2:5, 3:7
+            and explain the shape of the distribution of these gaps.
+            <br>
+           </p>
+
+        <div class="text-center d-none d-sm-block">
+          <video width="320" height="240" controls>
+            <source src="../../../assets/IMG_9225.mov" type="video/ogg">
+          </video>
+          <p class="opis"><em>Animation of asteroid ejections</em></p>
+        </div>
+        <h3 class="font-weight-bold"> Stochastic Arnold diffusion  </h3>
+        <p>
+          In early 60s V. Arnold constructed an example of instabilities for nearly
+          intergable Hamiltonian systems, discussed below. However, the name of
+          this phenomena of instabilities Arnold diffusion was coined by the
+          physisist Chirikov.
+          <br>
+          <br>
+          Another direction of our research is to prove that nearly integrable systems
+          generically do exhibit stochastic diffusive behavior.
+        </p>
+
+      </div>
+    </mat-expansion-panel>
+  </div>
+</div>

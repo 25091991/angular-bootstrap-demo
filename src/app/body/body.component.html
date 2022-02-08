@@ -1,0 +1,82 @@
+<div class="container-fluid">
+  <div class="row pt-5 pr-5 justify-content-between">
+    <button
+      (click)="toggleNav()"
+      class="nav-btn bg-dark"
+      mat-raised-button
+    >
+      <p class="colorMenu"> MENU </p>
+    </button>
+    <div
+      class="column01 p-4 col-lg-3 d-lg-block mb-5 mb-lg-0"
+      [class]="{ showNav: isVisible }"
+    >
+      <div class="nav">
+        <button
+          (click)="toggleNav($event)"
+          style="text-align: left"
+          mat-raised-button
+          class="nav-link shadow"
+          routerLink="/"
+          routerLinkActive="active-link"
+          [routerLinkActiveOptions]="{ exact: true }">
+          NEWS
+        </button>
+
+        <button
+          (click)="toggleNav($event)"
+          style="text-align: left"
+          mat-raised-button
+          class="nav-link shadow"
+          routerLink="/research"
+          routerLinkActive="active-link">
+          RESEARCH
+        </button>
+
+        <button
+          (click)="toggleNav($event)"
+          style="text-align: left"
+          mat-raised-button
+          class="nav-link shadow"
+          routerLink="/publications"
+          routerLinkActive="active-link">
+          PUBLICATIONS
+        </button>
+
+        <button
+          (click)="toggleNav($event)"
+          style="text-align: left"
+          mat-raised-button
+          class="nav-link shadow"
+          routerLink="/biography"
+          routerLinkActive="active-link">
+          VADIM'S BIO
+        </button>
+
+        <button
+          (click)="toggleNav($event)"
+          style="text-align: left"
+          mat-raised-button
+          class="nav-link shadow"
+          routerLink="/members"
+          routerLinkActive="active-link">
+          MEMBERS
+        </button>
+
+        <button
+          (click)="toggleNav($event)"
+          style="text-align: left"
+          mat-raised-button
+          class="nav-link shadow"
+          routerLink="/contact"
+          routerLinkActive="active-link">
+          CONTACT
+        </button>
+      </div>
+    </div>
+
+    <div id="col9" class="col-md-10 mx-md-auto col-lg-9 column02 p-4">
+      <router-outlet class="view"></router-outlet>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+.btn-text b{display:inline}
+.btn-text:not(.collapsed)  span{display:none}
+.btn-text.collapsed b {display:none}
+
+.textVadim{
+    text-align: justify; 
+    text-indent: 25px;
+    }
+.opis{
+    color: rgb(30, 30, 90);
+    font-size: 5px;
+}
+
+.opis1{
+    color: rgb(30, 30, 90);
+}

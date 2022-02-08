@@ -1,0 +1,21 @@
+.container {
+  position: relative;
+}
+.text-3 {
+  padding: 10px;
+  font-size: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.line2 {
+  border-top: 1px solid rgb(80, 79, 79);
+  height: 80px;
+  background-color: white;
+}
+
+.imgF {
+  position: absolute;
+  right: 0;
+}
+
